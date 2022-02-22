@@ -1,0 +1,38 @@
+<%- include("../includes/head.ejs") %>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Presensi Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/admin/mahasiswa-kelasb">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Input kelas B</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="/admin/post/kelasb" method="post">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Masukan Nomor Induk Mahasiswa</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex: 20102050051" name="inputNim">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Masukan Nama</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ex: Fadhli Abrar" name="inputNama">
+                    </div>
+                    <button class="btn btn-primary" type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<%- include("../includes/end.ejs") %>
